@@ -111,20 +111,6 @@ Since this is a static site, no build tools (npm/yarn) are required!
 
 ---
 
-
-## Contributing
-Feel free to fork this project and create your own version for your special someone.
-
-Fork the Project
-
-Create your Feature Branch
-
-Commit your Changes 
-
-Push to the Branch 
-
-Open a Pull Request
-
 <div align="center">
 
 ## Made with 💖 by Sarthak
