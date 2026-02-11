@@ -12,7 +12,7 @@
 
   [![Live Demo](https://img.shields.io/badge/DEMO-LIVE_PREVIEW-E37EAF?style=for-the-badge&logo=vercel&logoColor=white)](https://your-demo-link-here.com)
   [![License](https://img.shields.io/badge/LICENSE-MIT-060304?style=for-the-badge)](LICENSE)
-  [![Made with Love](https://img.shields.io/badge/MADE_WITH-%E2%9D%A4%EF%B8%8F-E37EAF?style=for-the-badge)](https://github.com/yourusername)
+  [![Made with Love](https://img.shields.io/badge/MADE_WITH-%E2%9D%A4%EF%B8%8F-E37EAF?style=for-the-badge)](https://github.com/1sarthak7)
 
   <p align="center">
     "Today, I make a promise. To stay. To grow. To choose you."
@@ -106,3 +106,26 @@ Since this is a static site, no build tools (npm/yarn) are required!
 ├── style.css        # The costume (Styling & Animations)
 ├── script.js        # The actor (3D Logic & Interactivity)
 └── assets/          # (Optional) Audio files if downloaded
+
+```
+
+## Contributing
+Feel free to fork this project and create your own version for your special someone.
+
+Fork the Project
+
+Create your Feature Branch (git checkout -b feature/AmazingLove)
+
+Commit your Changes (git commit -m 'Add some sparkle')
+
+Push to the Branch (git push origin feature/AmazingLove)
+
+Open a Pull Request
+
+<div align="center">
+
+## Made with 💖 by Sarthak
+
+<a href="https://github.com/yourusername"> <img src="https://www.google.com/search?q=https://img.shields.io/github/followers/yourusername%3Flabel%3DFollow%26style%3Dsocial" alt="GitHub Followers"/> </a>
+
+</div>
