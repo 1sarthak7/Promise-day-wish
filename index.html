@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Promise | Forever</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="vignette-overlay"></div>
+
+    <div id="start-overlay">
+        <div class="loader-heart">❤</div>
+        <p>Tap to Begin</p>
+    </div>
+
+    <main>
+        
+        <section class="hero-section">
+            <h1 class="hero-title">
+                <span class="reveal-text">Today,</span><br>
+                <span class="reveal-text delay-1">I Make a Promise.</span>
+            </h1>
+            <p class="hero-subtitle fade-in delay-2">Scroll gently</p>
+        </section>
+
+        <section class="scroll-section">
+            <div class="promise-container">
+                <div class="promise-card">
+                    <p class="promise-item">I promise to stay.</p>
+                </div>
+                <div class="promise-card">
+                    <p class="promise-item">To grow with you.</p>
+                </div>
+                <div class="promise-card">
+                    <p class="promise-item">To choose you.</p>
+                </div>
+                <div class="promise-card">
+                    <p class="promise-item">Every single day.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="final-section">
+            <h2 class="final-text" id="final-promise">This is my Promise.</h2>
+            <div class="watermark">Built by Sarthak</div>
+        </section>
+           
+    </main>
+
+    <audio id="ambient-music" loop>
+        <source src="https://cdn.pixabay.com/audio/2022/02/07/audio_6590204732.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
