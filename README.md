@@ -28,7 +28,7 @@
 
 Built with **Three.js**, it features a particle system that starts as chaotic "stardust" and purely through the mathematics of your scroll, morphs into a perfect **3D Heart** as you make your final promise.
 
-
+<div align="center">
 ##  Aesthetic & Palette
 
 The design philosophy is **"Midnight Romance"** — deep, dark tones with soft, glowing accents.
@@ -39,6 +39,7 @@ The design philosophy is **"Midnight Romance"** — deep, dark tones with soft, 
 | **Blush Glow** | `#E37EAF` | Particles, Accents, Key Text |
 | **Pure White** | `#FFFFFF` | Primary Typography |
 
+</div>
 ---
 
 ##  Key Features
@@ -97,7 +98,6 @@ Since this is a static site, no build tools (npm/yarn) are required!
 ---
 
 ##  File Structure
-<div align="center">
   
 ```text
 /
@@ -107,7 +107,6 @@ Since this is a static site, no build tools (npm/yarn) are required!
 └── assets/          # (Optional) Audio files if downloaded
 
 ```
-</div>
 
 ---
 
