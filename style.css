@@ -216,3 +216,22 @@ section {
 @keyframes fadeInSimple {
     to { opacity: 0.7; }
 }
+
+.watermark2 {
+    position: fixed;
+    bottom: 20px;
+    right: 28px;
+    font-size: 8px;
+    letter-spacing: 1.2px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: rgba(255, 255, 255, 0.25);
+    text-decoration: none;
+    z-index: 9999;
+    transition: all 0.4s ease;
+}
+
+.watermark2:hover {
+    color: rgba(255, 255, 255, 0.65);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
