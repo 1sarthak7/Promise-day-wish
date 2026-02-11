@@ -6,7 +6,7 @@
 
   #  The Promise | A Cinematic Experience
   
-  **A 3D Interactive Web Experience for Promise Day**
+  **A Web Experience for Promise Day**
   
   <br/>
 
@@ -28,8 +28,6 @@
 
 Built with **Three.js**, it features a particle system that starts as chaotic "stardust" and purely through the mathematics of your scroll, morphs into a perfect **3D Heart** as you make your final promise.
 
-![Cinematic Preview](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbm90Zm91bmQ/giphy.gif) 
-*(Replace this link with a screenshot or GIF of your actual site for the best effect!)*
 
 ##  Aesthetic & Palette
 
@@ -126,6 +124,6 @@ Open a Pull Request
 
 ## Made with 💖 by Sarthak
 
-<a href="https://github.com/yourusername"> <img src="https://www.google.com/search?q=https://img.shields.io/github/followers/yourusername%3Flabel%3DFollow%26style%3Dsocial" alt="GitHub Followers"/> </a>
+<a href="https://github.com/yourusername"> <img src="https://www.google.com/search?q=https://img.shields.io/github/followers/1sarthak7%3Flabel%3DFollow%26style%3Dsocial" alt="GitHub Followers"/> </a>
 
 </div>
