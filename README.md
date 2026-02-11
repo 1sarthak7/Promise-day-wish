@@ -11,7 +11,7 @@
   <br/>
 
   [![Live Demo](https://img.shields.io/badge/DEMO-LIVE_PREVIEW-E37EAF?style=for-the-badge&logo=vercel&logoColor=white)](https://your-demo-link-here.com)
-  [![License](https://img.shields.io/badge/LICENSE-MIT-060304?style=for-the-badge)](LICENSE)
+  [![License](https://img.shields.io/badge/LICENSE-Sarthak-060304?style=for-the-badge)](LICENSE)
   [![Made with Love](https://img.shields.io/badge/MADE_WITH-%E2%9D%A4%EF%B8%8F-E37EAF?style=for-the-badge)](https://github.com/1sarthak7)
 
   <p align="center">
@@ -43,7 +43,7 @@ The design philosophy is **"Midnight Romance"** — deep, dark tones with soft, 
 
 ##  Key Features
 
-### 🌪️ The "Morph" Engine
+###  The "Morph" Engine
 The core of the experience is a custom math-based particle system.
 - **State A:** 1200+ particles float in random chaos (The Universe).
 - **State B:** As you scroll, they mathematically align into a 3D Heart (The Promise).
@@ -81,7 +81,7 @@ Since this is a static site, no build tools (npm/yarn) are required!
 
 1.  **Clone the Repo**
     ```bash
-    git clone [https://github.com/yourusername/the-promise.git](https://github.com/yourusername/the-promise.git)
+    git clone [https://github.com/yourusername/the-promise.git](https://github.com/1sarthak7/Promise-day-wish
     ```
 
 2.  **Open the Folder**
@@ -97,7 +97,8 @@ Since this is a static site, no build tools (npm/yarn) are required!
 ---
 
 ##  File Structure
-
+<div align="center">
+  
 ```text
 /
 ├── index.html       # The stage (DOM structure)
@@ -106,17 +107,21 @@ Since this is a static site, no build tools (npm/yarn) are required!
 └── assets/          # (Optional) Audio files if downloaded
 
 ```
+</div>
+
+---
+
 
 ## Contributing
 Feel free to fork this project and create your own version for your special someone.
 
 Fork the Project
 
-Create your Feature Branch (git checkout -b feature/AmazingLove)
+Create your Feature Branch
 
-Commit your Changes (git commit -m 'Add some sparkle')
+Commit your Changes 
 
-Push to the Branch (git push origin feature/AmazingLove)
+Push to the Branch 
 
 Open a Pull Request
 
