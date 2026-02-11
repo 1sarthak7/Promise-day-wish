@@ -1,0 +1,218 @@
+/* --- Reset & Base --- */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-dark: #060304;   /* Palette Black */
+    --accent-pink: #E37EAF; /* Palette Pink */
+    --text-white: #FFFFFF;
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    cursor: default;
+    scrollbar-width: none; 
+}
+
+body::-webkit-scrollbar { display: none; }
+
+/* --- 3D Canvas & Overlays --- */
+#bg-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+/* Adds a subtle pink glow to the corners */
+.vignette-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    background: radial-gradient(circle at center, transparent 0%, rgba(6,3,4,0.8) 100%);
+    box-shadow: inset 0 0 100px rgba(227, 126, 175, 0.15); /* Subtle pink tint */
+}
+
+/* --- Start Overlay --- */
+#start-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    transition: opacity 1.2s ease;
+    cursor: pointer;
+}
+
+#start-overlay p {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--accent-pink);
+    opacity: 0.8;
+}
+
+.loader-heart {
+    font-size: 2rem;
+    color: var(--accent-pink);
+    animation: heartbeat 1.5s infinite;
+}
+
+/* --- Typography & Sections --- */
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Hero */
+.hero-title {
+    font-family: var(--font-serif);
+    font-size: clamp(3.5rem, 9vw, 7rem);
+    font-weight: 400;
+    line-height: 1.1;
+    text-align: center;
+    color: var(--text-white);
+    /* Soft pink glow behind text */
+    text-shadow: 0 0 30px rgba(227, 126, 175, 0.3);
+}
+
+.hero-subtitle {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--accent-pink);
+    opacity: 0; 
+}
+
+/* Scroll Section */
+.scroll-section {
+    /* Make this taller so there is time for the heart to form */
+    padding: 20vh 0; 
+}
+
+.promise-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20vh;
+    align-items: center;
+    padding: 10vh 0;
+    gap: 30vh; /* More space between words */
+}
+
+.promise-item {
+    font-family: var(--font-serif);
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    color: rgba(255,255,255,0.9);
+    opacity: 0.1;
+    transform: translateY(30px) scale(0.95);
+    transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+    text-align: center;
+}
+
+.promise-item.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    text-shadow: 0 0 20px rgba(227, 126, 175, 0.4);
+}
+
+/* Final Section */
+/* Update Final Section to align with the 3D Heart */
+.final-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center text visually */
+    pointer-events: none; /* Let clicks pass through to canvas if needed */
+}
+
+.final-text {
+    font-family: var(--font-serif);
+    font-size: clamp(3rem, 7vw, 6rem);
+    color: var(--accent-pink); /* Using the pink from palette */
+    text-align: center;
+    line-height: 1.2;
+    opacity: 0;
+    /* Stronger glow for the final promise */
+    text-shadow: 0 0 10px rgba(227, 126, 175, 0.6), 0 0 40px rgba(227, 126, 175, 0.3);
+    margin-top: 25vh; 
+    z-index: 10;
+    position: relative;
+}
+
+/* Letter Animation */
+.letter {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    filter: blur(10px);
+    transition: all 1s ease;
+}
+
+.letter.active {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+}
+
+/* Watermark */
+.watermark {
+    position: absolute;
+    bottom: 2rem;
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color: var(--accent-pink);
+    opacity: 0.5;
+}
+
+/* --- Animations --- */
+@keyframes heartbeat {
+    0% { transform: scale(1); opacity: 0.7; }
+    50% { transform: scale(1.2); opacity: 1; text-shadow: 0 0 20px var(--accent-pink); }
+    100% { transform: scale(1); opacity: 0.7; }
+}
+
+.reveal-text {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: slideUpFade 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.delay-1 { animation-delay: 0.6s; }
+.delay-2 { animation-delay: 2.0s; }
+.fade-in { opacity: 0; animation: fadeInSimple 2s ease forwards; }
+
+@keyframes slideUpFade {
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInSimple {
+    to { opacity: 0.7; }
+}
