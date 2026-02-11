@@ -24,7 +24,7 @@
 
 ##  Overview
 
-**The Promise** is not just a website; it's a digital short film. It moves away from generic, flashy designs to offer a **premium, Apple-style cinematic experience**. 
+**The Promise** is not just a website; it's a digital short film. It moves away from generic, flashy designs to offer a **premium, experience**. 
 
 Built with **Three.js**, it features a particle system that starts as chaotic "stardust" and purely through the mathematics of your scroll, morphs into a perfect **3D Heart** as you make your final promise.
 
@@ -40,6 +40,7 @@ The design philosophy is **"Midnight Romance"** — deep, dark tones with soft, 
 | **Pure White** | `#FFFFFF` | Primary Typography |
 
 </div>
+
 ---
 
 ##  Key Features
